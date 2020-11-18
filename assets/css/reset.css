@@ -1,0 +1,48 @@
+/***** RESET *****/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: "Poppins";
+  font-style: normal;
+  color: #333333;
+}
+
+/* h2 for the price */
+h2 {
+  font-weight: 600;
+  font-size: 44px;
+  line-height: 66px;
+}
+
+/* h3 for the dish name */
+h3 {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 50px;
+}
+
+/* p for the dish description */
+p {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 19px;
+}
+
+a {
+  text-decoration: none;
+  color: #333333;
+}
+
+button {
+  width: 163px;
+  height: 48px;
+  box-shadow: 0px 20px 40px #f4e2d1;
+  border-radius: 69px;
+}
