@@ -20,6 +20,7 @@ h2 {
   font-weight: 600;
   font-size: 44px;
   line-height: 66px;
+  color: #ff922c;
 }
 
 /* h3 for the dish name */
@@ -34,6 +35,7 @@ p {
   font-weight: 400;
   font-size: 13px;
   line-height: 19px;
+  margin-top: 12px;
 }
 
 a {
@@ -45,6 +47,22 @@ a {
 button {
   width: 163px;
   height: 48px;
-  box-shadow: 0px 20px 40px #f4e2d1;
+  margin-top: 28px;
   border-radius: 69px;
+  border: none;
+  outline: none;
+  color: white !important;
+  transition: all 0.5s ease-in-out;
+  text-transform: uppercase;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 19px;
+  background-color: #ff922c;
+  box-shadow: 0px 20px 40px #f4e2d1;
+}
+
+button:hover {
+  background-color: #fc7b02;
 }
