@@ -129,7 +129,7 @@
 
 /* Selected dish info */
 .selected__info {
-  width: 367px;
+  width: 330px;
   height: 238px;
   position: absolute;
   top: 250px;
@@ -138,13 +138,14 @@
 
 /* Spinner center selected dish img */
 .selected__dish {
-  width: 289.14px;
-  height: 295.1px;
+  width: 289px;
+  height: 295px;
   position: absolute;
   top: 50%;
   left: 60%;
   z-index: 2;
   border-radius: 50%;
+  background-image: url("../images/webp/dish_1.webp");
   background-position: center center;
   background-size: contain;
 }
