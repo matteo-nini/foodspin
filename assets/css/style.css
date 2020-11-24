@@ -34,9 +34,10 @@
   margin-right: 10px;
 }
 
-.nav__logo a h1 {
+.nav__logo h1 {
   font-weight: 500;
   font-size: 18px;
+  margin-top: -5px;
 }
 
 .nav__links {
@@ -52,10 +53,6 @@
 
 .nav__links ul li {
   margin: 0 30px;
-}
-
-.nav__links ul li a:hover {
-  color: #ff922c;
 }
 
 .nav__shopper {
@@ -132,7 +129,7 @@
   width: 330px;
   height: 238px;
   position: absolute;
-  top: 250px;
+  top: 170px;
   left: 100px;
 }
 
@@ -167,4 +164,10 @@
   background-image: url("../images/svg/arrow.svg");
   background-position: center;
   background-repeat: no-repeat;
+}
+
+a.video {
+  position: fixed;
+  bottom: 28px;
+  left: 100px;
 }

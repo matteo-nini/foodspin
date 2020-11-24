@@ -44,6 +44,10 @@ a {
   transition: all 0.5s ease-in-out;
 }
 
+a:hover {
+  color: #ff922c;
+}
+
 button {
   width: 163px;
   height: 48px;
