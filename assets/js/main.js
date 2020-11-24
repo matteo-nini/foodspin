@@ -2,31 +2,11 @@ const price = document.querySelector("h2");
 const name = document.querySelector("h3");
 const description = document.querySelector("p");
 const orderNow = document.querySelector(".selected__info button");
+
 const selectedDish = document.querySelector(".selected__dish");
 
-//Define arrays
-const images = [
-  "url('assets/images/webp/dish_1.webp')",
-  "url('assets/images/webp/dish_2.webp')",
-  "url('assets/images/webp/dish_3.webp')",
-];
-const prices = ["$32", "$35", "$32"];
-const names = [
-  "Green Goddess Chicken Salad",
-  "Asian Cucumber Salad",
-  "Green Goddess Chicken Salad",
-];
-const descriptions = [
-  "It is a non vegetarian salad which consists of the green goddess dressing mixed with chicken, peppers, olives and celery.",
-  "Asian Cucumber Salad Recipe made with crunchy cucumber, onion, rice wine vinegar, and a few secret ingredients!",
-  "It is a non vegetarian salad which consists of the green goddess dressing mixed with chicken, peppers, olives and celery. ",
-];
-
+//array index
 let contentSelector = 0;
-price.innerHTML = prices[contentSelector];
-name.innerHTML = names[contentSelector];
-description.innerHTML = descriptions[contentSelector];
-selectedDish.style.backgroundImage = images[contentSelector];
 
 //boolean for colors control
 let isOrange = true;
@@ -38,7 +18,8 @@ let spin = 0.0;
 const shiftRight = document.querySelector(".shift__right");
 shiftRight.addEventListener("click", (event) => {
   contentSelector++;
-  if (contentSelector > images.length - 1) contentSelector = 0;
+  if (contentSelector == dishes.length) contentSelector = 0;
+
   spinRight();
   changeContent(contentSelector);
   animateContent();
@@ -50,7 +31,7 @@ const shiftLeft = document.querySelector(".shift__left");
 shiftLeft.addEventListener("click", (event) => {
   if (contentSelector != 0) contentSelector--;
   else {
-    contentSelector = images.length - 1;
+    contentSelector = dishes.length - 1;
   }
   spinLeft();
   animateContent();
@@ -92,20 +73,43 @@ function changeColors() {
 }
 
 function changeContent(contentSelector) {
+  //Define arrays
+  const images = [
+    "url('assets/images/webp/dish_1.webp')",
+    "url('assets/images/webp/dish_2.webp')",
+    "url('assets/images/webp/dish_3.webp')",
+  ];
+  const prices = ["$32", "$35", "$32"];
+  const names = [
+    "Green Goddess Chicken Salad",
+    "Asian Cucumber Salad",
+    "Green Goddess Chicken Salad",
+  ];
+  const descriptions = [
+    "It is a non vegetarian salad which consists of the green goddess dressing mixed with chicken, peppers, olives and celery.",
+    "Asian Cucumber Salad Recipe made with crunchy cucumber, onion, rice wine vinegar, and a few secret ingredients!",
+    "It is a non vegetarian salad which consists of the green goddess dressing mixed with chicken, peppers, olives and celery. ",
+  ];
   switch (contentSelector) {
     case 0:
+    case 3:
       price.innerHTML = prices[0];
       name.innerHTML = names[0];
       description.innerHTML = descriptions[0];
       selectedDish.style.backgroundImage = images[0];
       break;
     case 1:
+    case 4:
+    case 6:
       price.innerHTML = prices[1];
       name.innerHTML = names[1];
       description.innerHTML = descriptions[1];
       selectedDish.style.backgroundImage = images[1];
       break;
     case 2:
+    case 5:
+    case 7:
+    case 8:
       price.innerHTML = prices[2];
       name.innerHTML = names[2];
       description.innerHTML = descriptions[2];

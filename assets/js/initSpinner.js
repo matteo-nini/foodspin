@@ -22,6 +22,8 @@ dishes.forEach((dish, i) => {
   dish.style.left = `${center.x + newX}px`;
   dish.style.top = `${center.y + newY}px`;
 
+  //if (i == 2) dish.classList.add("active");
+
   //add the elements relative background
   addDishesBackground(dish, i);
 });
