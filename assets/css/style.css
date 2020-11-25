@@ -51,7 +51,7 @@
 /* selected dish infos*/
 .selected__dish {
   width: 100%;
-  height: 85vh;
+  height: calc(100vh - 100px);
   align-self: center;
   display: flex;
   justify-content: space-between;
@@ -82,7 +82,7 @@
   height: auto;
   display: flex;
   justify-content: space-between;
-  position: absolute;
+  position: fixed;
   bottom: 20%;
   right: 11%;
 }
@@ -97,6 +97,6 @@
 
 a.video {
   position: fixed;
-  bottom: 28px;
+  bottom: 5%;
   left: 100px;
 }

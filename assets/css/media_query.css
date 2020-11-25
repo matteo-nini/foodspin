@@ -1,3 +1,9 @@
+@media screen and (max-height: 736px) {
+  .spinner__conatiner {
+    height: 900px;
+  }
+}
+
 /* Large screens ----------- */
 @media screen and (min-width: 1824px) {
   .selected__dish {
