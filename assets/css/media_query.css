@@ -1,0 +1,14 @@
+/* Large screens ----------- */
+@media screen and (min-width: 1824px) {
+  .selected__dish {
+    padding-right: 270px;
+  }
+
+  .selected__dish__image {
+    margin-top: 10%;
+  }
+
+  .arrow__buttons {
+    right: 6%;
+  }
+}

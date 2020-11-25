@@ -1,9 +1,9 @@
 const price = document.querySelector("h2");
 const name = document.querySelector("h3");
 const description = document.querySelector("p");
-const orderNow = document.querySelector(".selected__info button");
+const orderNow = document.querySelector(".selected__dish__info button");
 
-const selectedDish = document.querySelector(".selected__dish");
+//const selectedDish = document.querySelector(".selected__dish__image");
 
 //array index
 let contentSelector = 0;
@@ -75,9 +75,9 @@ function changeColors() {
 function changeContent(contentSelector) {
   //Define arrays
   const images = [
-    "url('assets/images/webp/dish_1.webp')",
-    "url('assets/images/webp/dish_2.webp')",
-    "url('assets/images/webp/dish_3.webp')",
+    "assets/images/webp/dish_1.webp",
+    "assets/images/webp/dish_2.webp",
+    "assets/images/webp/dish_3.webp",
   ];
   const prices = ["$32", "$35", "$32"];
   const names = [
@@ -90,13 +90,17 @@ function changeContent(contentSelector) {
     "Asian Cucumber Salad Recipe made with crunchy cucumber, onion, rice wine vinegar, and a few secret ingredients!",
     "It is a non vegetarian salad which consists of the green goddess dressing mixed with chicken, peppers, olives and celery. ",
   ];
+  let dishImageConteiner = document.querySelector(".selected__dish__image");
+  dishImageConteiner.style.transform = "translate(0%,0%)";
+
   switch (contentSelector) {
     case 0:
     case 3:
       price.innerHTML = prices[0];
       name.innerHTML = names[0];
       description.innerHTML = descriptions[0];
-      selectedDish.style.backgroundImage = images[0];
+      selectedDishImg.src = images[0];
+      selectedDishImg.alt = names[1];
       break;
     case 1:
     case 4:
@@ -104,7 +108,8 @@ function changeContent(contentSelector) {
       price.innerHTML = prices[1];
       name.innerHTML = names[1];
       description.innerHTML = descriptions[1];
-      selectedDish.style.backgroundImage = images[1];
+      selectedDishImg.src = images[1];
+      selectedDishImg.alt = names[1];
       break;
     case 2:
     case 5:
@@ -113,7 +118,9 @@ function changeContent(contentSelector) {
       price.innerHTML = prices[2];
       name.innerHTML = names[2];
       description.innerHTML = descriptions[2];
-      selectedDish.style.backgroundImage = images[2];
+      selectedDishImg.src = images[2];
+      selectedDishImg.alt = names[2];
+      dishImageConteiner.style.transform = "translate(15%, -20%)";
       break;
   }
 }
@@ -138,7 +145,7 @@ function animateContent() {
     { transform: "scale(1, 1)" },
   ];
 
-  selectedDish.animate(dishAnimate, 300);
+  selectedDishImg.animate(dishAnimate, 300);
   price.animate(textAnimate, 500);
   name.animate(textAnimate, 500);
   description.animate(textAnimate, 500);

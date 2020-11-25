@@ -1,0 +1,48 @@
+/* Spinner container */
+.spinner__container {
+  position: absolute;
+  width: 1200px;
+  height: 1117px;
+  right: -10%;
+  top: -85%;
+  border-radius: 50%;
+  z-index: -1;
+  clip-path: circle();
+  background-color: #ffeede;
+}
+
+/* Spinner wheel */
+.spinner__wheel {
+  width: 560px;
+  height: 560px;
+  border: 2px dashed #e87f1e;
+  border-radius: 50%;
+  position: absolute;
+  top: 93%;
+  left: 50%;
+  transition: all 0.5s ease-in-out;
+  transform: translate(-50%, -50%);
+}
+
+/* Dishes on the spinner wheel */
+.spinner__dish {
+  width: 97px;
+  height: 99px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  background-position: center center;
+  background-size: cover;
+}
+
+/* Change width of dish 3 image on the spinner, cause it's too small */
+.spinner__dish:nth-child(2),
+.spinner__dish:nth-child(5),
+.spinner__dish:nth-child(8) {
+  background-color: transparent;
+  width: 130px;
+  height: 130px;
+}
