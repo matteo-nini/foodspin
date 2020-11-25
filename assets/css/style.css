@@ -82,7 +82,7 @@
   height: auto;
   display: flex;
   justify-content: space-between;
-  position: fixed;
+  position: absolute;
   bottom: 20%;
   right: 11%;
 }
