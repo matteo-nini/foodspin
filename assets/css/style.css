@@ -1,98 +1,13 @@
-/* Navbar elements */
-.nav__logo {
-  align-self: stretch center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.nav__logo a img {
-  margin-right: 10px;
-}
-
-.nav__logo h1 {
-  font-weight: 500;
-  font-size: 18px;
-  margin-top: -5px;
-}
-
-.nav__links {
-  align-self: stretch center;
-  list-style-type: none;
-  display: flex;
-  justify-content: center;
-  margin-left: -250px;
-}
-
-.nav__links li {
-  margin: 0 30px;
-}
-
-.nav__shopper {
-  position: relative;
-  align-self: stretch flex-end;
-}
-
-.shopper:hover {
-  content: url("../images/svg/shopper_hover.svg");
-}
-
-.nav__shopper__badge {
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  display: inline-block;
-  position: absolute;
-  bottom: 5px;
-  left: 80%;
-  background: #ff922c;
-}
-
-/* selected dish infos*/
-.selected__dish {
-  width: 100%;
-  height: calc(100vh - 100px);
-  align-self: center;
+.content {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 5px 300px 5px 100px;
+  padding: 0 100px;
+  height: calc(100vh - 100px);
 }
 
-.selected__dish__image {
-  height: 300px;
-  height: 300px;
-  z-index: 2;
-  margin-left: auto;
-  margin-top: 15%;
-}
-
-.selected__dish__image img {
-  border-radius: 50%;
-}
-
-/* Selected dish info */
 .selected__dish__info {
   width: 330px;
-}
-
-/* Arrow buttons */
-.arrow__buttons {
-  width: 600px;
-  height: auto;
-  display: flex;
-  justify-content: space-between;
-  position: absolute;
-  bottom: 18%;
-  right: 11%;
-}
-
-.arrow__buttons button {
-  width: 40px;
-  height: 40px;
-  background-image: url("../images/svg/arrow.svg");
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 a.video {

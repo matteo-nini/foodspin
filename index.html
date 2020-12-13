@@ -3,15 +3,24 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Matteo Nini" />
-    <meta name="keywords" content="FoodSpin, food, breakfast, lunch, dinner, salads, meat, dishes, dish, fish, chips, food order, landing page"/>
-    <meta name="description" content="Spin around millions of products, from breakfast, in lunch, to dinner, with FoodSpin you can get what you want right in your house. Order now!"/>
+    <meta
+      name="keywords"
+      content="FoodSpin, food, breakfast, lunch, dinner, salads, meat, dishes, dish, fish, chips, food order, landing page"
+    />
+    <meta
+      name="description"
+      content="Spin around millions of products, from breakfast, in lunch, to dinner, with FoodSpin you can get what you want right in your house. Order now!"
+    />
     <!-- OG Tags -->
     <meta property="og:locale" content="en" />
     <meta property="og:type" content="article" />
     <meta property="og:title" content="FoodSpin - Spin and order!" />
-    <meta property="og:description" content="Spin around millions of products, from breakfast, through lunch, to dinner, with FoodSpin you can get what you want right in your house. Order now!"/>
+    <meta
+      property="og:description"
+      content="Spin around millions of products, from breakfast, through lunch, to dinner, with FoodSpin you can get what you want right in your house. Order now!"
+    />
     <meta property="og:url" content="https://foodspin.netlify.app" />
-    <meta property="og:image" content="assets/images/webp/homepage.webp"/>
+    <meta property="og:image" content="assets/images/webp/homepage.webp" />
     <meta property="og: site_name" content="FoodSpin - Spin and order!" />
     <!-- Twitter Card -->
     <meta name="twitter:card" content="large_image" />
@@ -19,14 +28,17 @@
     <meta name="twitter:creator" content="@matteonini" />
     <meta property="og:url" content="https://foodspin.netlify.app" />
     <meta property="og:title" content="FoodSpin - Spin and order!" />
-    <meta property="og:description" content="Spin around millions of products, from breakfast, through lunch, to dinner, with FoodSpin you can get what you want right in your house. Order now!" />
+    <meta
+      property="og:description"
+      content="Spin around millions of products, from breakfast, through lunch, to dinner, with FoodSpin you can get what you want right in your house. Order now!"
+    />
     <meta property="og:image" content="assets/images/webp/homepage.webp" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta charset="UTF-8" />
     <link rel="canonical" href="https://foodspin.netlify.app" />
     <link rel="icon" href="assets/images/svg/logo.svg" />
     <link rel="stylesheet" href="assets/css/main.css" />
-    <link rel="stylesheet" href="assets/css/media_query.css">
+    <link rel="stylesheet" href="assets/css/media_query.css" />
     <title>FoodSpin - Spin and order</title>
   </head>
   <body>
@@ -52,45 +64,53 @@
         <span class="nav__shopper__badge"></span>
       </div>
     </nav>
-
-    <!--food spinner background-->
-    <div class="spinner__container">
-      <!--food spinner wheel-->
-      <div class="spinner__wheel">
-        <div class="spinner__dish"></div>
-        <div class="spinner__dish"></div>
-        <div class="spinner__dish"></div>
-        <div class="spinner__dish"></div>
-        <div class="spinner__dish"></div>
-        <div class="spinner__dish"></div>
-        <div class="spinner__dish"></div>
-        <div class="spinner__dish"></div>
-      </div>
-    </div>
-
-    <!--arrow buttons-->
-    <div class="arrow__buttons">
-      <button class="shift__left" aria-label="Shift Left"></button>
-      <button class="shift__right" aria-label="Shift Right"></button>
-    </div>
-
-    <!--selected dish info-->
-    <div class="selected__dish">
+    <div class="content">
+      <!--selected dish info-->
       <div class="selected__dish__info">
         <h2>$32</h2>
         <h3>Green Goddess Chicken Salad</h3>
         <p>
-          It is a non vegetarian salad which consists of the green goddess dressing mixed with chicken, peppers, olives and celery. 
+          It is a non vegetarian salad which consists of the green goddess
+          dressing mixed with chicken, peppers, olives and celery.
         </p>
         <button class="selected__dish__info__order">Order Now</button>
       </div>
-      <!--selected dish image-->
-      <div  class="selected__dish__image">
-        <img name="selectedDishImg" alt="Green Goddess Chicken Salad" src="assets/images/webp/dish_1.webp"></img>
+
+      <div class="spinner">
+        <!--food spinner background-->
+        <div class="spinner__container">
+          <!--food spinner wheel-->
+          <div class="spinner__wheel">
+            <div class="spinner__dish"></div>
+            <div class="spinner__dish"></div>
+            <div class="spinner__dish"></div>
+            <div class="spinner__dish"></div>
+            <div class="spinner__dish"></div>
+            <div class="spinner__dish"></div>
+            <div class="spinner__dish"></div>
+            <div class="spinner__dish"></div>
+          </div>
+        </div>
+        <img
+          class="selected__dish__image"
+          name="selectedDishImg"
+          alt="Green Goddess Chicken Salad"
+          src="assets/images/webp/dish_1.webp"
+        />
+        <!--arrow buttons-->
+        <div class="arrow__buttons">
+          <button class="shift__left" aria-label="Shift Left"></button>
+          <button class="shift__right" aria-label="Shift Right"></button>
+        </div>
       </div>
     </div>
-
-    <a href="https://www.youtube.com/watch?v=0XJqJJQ35oc" target="_blank" class="video" rel="noreferrer">Watch The Video</a>
+    <a
+      href="https://www.youtube.com/watch?v=0XJqJJQ35oc"
+      target="_blank"
+      class="video"
+      rel="noreferrer"
+      >Watch The Video</a
+    >
 
     <script src="assets/js/initSpinner.js"></script>
     <script src="assets/js/main.js"></script>

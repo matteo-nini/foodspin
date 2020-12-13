@@ -1,6 +1,6 @@
-const price = document.querySelector("h2");
-const name = document.querySelector("h3");
-const description = document.querySelector("p");
+const price = document.querySelector(".selected__dish__info h2");
+const name = document.querySelector(".selected__dish__info h3");
+const description = document.querySelector(".selected__dish__info p");
 const orderNow = document.querySelector(".selected__dish__info button");
 
 //const selectedDish = document.querySelector(".selected__dish__image");
@@ -90,8 +90,9 @@ function changeContent(contentSelector) {
     "Asian Cucumber Salad Recipe made with crunchy cucumber, onion, rice wine vinegar, and a few secret ingredients!",
     "It is a non vegetarian salad which consists of the green goddess dressing mixed with chicken, peppers, olives and celery. ",
   ];
-  let dishImageConteiner = document.querySelector(".selected__dish__image");
-  dishImageConteiner.style.transform = "translate(0%,0%)";
+
+  selectedDishImg.style.right = "calc(30px + 560px / 2)";
+  selectedDishImg.style.top = "calc(100px + 560px / 2)";
 
   switch (contentSelector) {
     case 0:
@@ -120,7 +121,8 @@ function changeContent(contentSelector) {
       description.innerHTML = descriptions[2];
       selectedDishImg.src = images[2];
       selectedDishImg.alt = names[2];
-      dishImageConteiner.style.transform = "translate(15%, -20%)";
+      selectedDishImg.style.right = "calc(520px / 2)";
+      selectedDishImg.style.top = "calc(30px + 560px / 2)";
       break;
   }
 }
